@@ -8,7 +8,7 @@ const BlogsList = () => {
         {/* Heading */}
         <div className='text-3xl md:text-4xl font-extrabold tracking-tighter'>Most Popular Blogs</div>
         {/* Blogs */}
-        <div className='flex flex-col gap-4 w-full md:w-[70%]'>
+        <div className='flex flex-col gap-4 w-full'>
             {
                 blogsData.map((blog, index) => (
                     <Blog

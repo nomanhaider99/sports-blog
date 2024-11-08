@@ -36,7 +36,7 @@ const Blog: React.FC<BlogProps> = ({
                             alt='User profile'
                             height={40}
                             width={40}
-                            className='rounded-full'
+                            className='rounded-full h-[3vw] w-[3vw]'
                         />
                     </div>
                     {/* Name */}
@@ -46,13 +46,13 @@ const Blog: React.FC<BlogProps> = ({
                 {/* Blog details */}
                 <div className='flex flex-col md:flex-row gap-4 md:justify-between items-center'>
                     {/* Text area */}
-                    <div className='flex flex-col w-full md:w-[60%]'>
+                    <div className='flex flex-col w-full md:w-[80%]'>
                         <div className='text-2xl md:text-4xl font-bold tracking-tighter'>{blogTitle}</div>
                         <div className='text-sm md:text-base text-zinc-700'>{blogDescription}</div>
                     </div>
                     
                     {/* Image area */}
-                    <div className='w-full md:w-[40%]'>
+                    <div className='w-full md:w-[20%]'>
                         <Image
                             src={blogImage}
                             alt='Blog image'

@@ -21,7 +21,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({ text, src, flip }) => {
                 alt=''
                 height={400}
                 width={300}
-                className='rounded-lg w-full'
+                className='rounded-lg md:h-[20vw] md:w-[20vw] w-full'
              />
         </div>
     </div>

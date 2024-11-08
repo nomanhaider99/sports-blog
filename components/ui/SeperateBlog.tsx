@@ -28,10 +28,10 @@ const SeperateBlog: React.FC<SeperateBlogProps> = ({
             <div className='flex gap-2 items-center'>
                 <Image
                     src={userImage}
-                    alt=''
-                    height={25}
-                    width={25}
-                    className='rounded-full'
+                    alt='User profile'
+                    height={40}
+                    width={40}
+                    className='rounded-full h-[3vw] w-[3vw]'
                 />
                 {userFullName}
             </div>
@@ -45,7 +45,7 @@ const SeperateBlog: React.FC<SeperateBlogProps> = ({
             <div className='text-zinc-600 text-lg tracking-tight'>{blogDescription}</div>
         </div>
         {/* Image and comments */}
-        <div className='flex flex-col md:flex-row gap-5 items-center '>
+        <div className='flex flex-col md:flex-row gap-5 md:items-center items-start'>
             {/* image */}
             <div>
                 <Image
@@ -57,7 +57,7 @@ const SeperateBlog: React.FC<SeperateBlogProps> = ({
                 />
             </div>
             {/* comment-section */}
-            <div className='p-4 flex flex-col justify-between gap-5'>
+            <div className='p-4 flex flex-col justify-between gap-5 -ml-[4vw] md:-ml-0'>
                 <div className='text-4xl border-l-[2px] border-zinc-600 py-4 px-4 font-extrabold tracking-tighter'>Comment Section</div>
                 <div className='flex flex-col gap-4'>
                     {
