@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 const page = ({ params }: { params: any }) => {
     const [comments, setComments] = useState<string[]>([]);
     const [comment, setComment] = useState<string>("");
-    const blog = blogsData.find((blog) => params.blog = blog.id );
+    const blog = blogsData.find((blog) => params.blog == blog.id );
 
     if (!blog) {
         return <div>Blog not found!</div>;
