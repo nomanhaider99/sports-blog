@@ -3,9 +3,9 @@ import { FaFacebook, FaInstagram, FaRegCopyright, FaTwitter, FaYoutube } from 'r
 
 const Footer = () => {
   return (
-    <div className='w-full border-t-[0.5px] border-zinc-600/70 flex justify-between items-center py-10'>
+    <div className='w-full border-t-[0.5px] border-zinc-600/70 flex md:flex-row flex-col justify-between items-center py-10'>
         {/* Social Icons */}
-        <div className='flex gap-5 items-center'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-5 items-center'>
             <FaInstagram size={40} color='#000' />
             <FaFacebook size={40} color='#000' />
             <FaTwitter size={40} color='#000' />
